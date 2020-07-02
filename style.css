@@ -63,6 +63,10 @@ li {
   border-radius: 5px;
 }
 
+.head ul li a:visited {
+ color: #000;
+}
+
 .box_black {
   background-color: black;
   color: #fff;
