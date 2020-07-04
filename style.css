@@ -285,10 +285,20 @@ footer p {
 
   #contactLinks {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    justify-content: space-evenly;
     margin: 20px 0 0 0;
     padding-left: 0px;
     line-height: 3rem;
+  }
+}
+
+/* LANDSCAPE */
+
+@media only screen 
+  and (min-device-width: 1366PX) 
+  and (min-device-height: 1024px) {
+    .projectImg {
+    width: 280px;
+    height: 180px;
   }
 }
