@@ -4,7 +4,7 @@
   padding: 0;
 }
 
-body {  
+body {
   background-image: linear-gradient(to bottom right, #c92461, #ee558d);
   font-family: 'Poppins', sans-serif;
 }
@@ -32,13 +32,17 @@ a {
   cursor: pointer;
 }
 
-a:hover {
+li {
+  list-style: none;
+}
+
+.social_links li a i:hover {
   transition: 0.5s;
   color: #fff;
 }
 
-li {
-  list-style: none;
+.social_links li a:visited {
+  color: #000;
 }
 
 .head {
@@ -61,10 +65,6 @@ li {
   background-color: #f3f3f3;
   margin: 25px;
   border-radius: 5px;
-}
-
-.head ul li a:visited {
- color: #000;
 }
 
 .box_black {
@@ -92,7 +92,7 @@ h1 {
 
 .myPic {
   width: 400px;
-  border-radius: 5px;
+  border-radius: 50%;
   margin-right: 30px;
 }
 
@@ -122,7 +122,7 @@ h1 {
 
 .project_list:hover {
   transform: scale(1.02);
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .projectName a:hover {
@@ -162,8 +162,8 @@ input[type='submit'] {
 
 input[type='submit']:hover {
   /* background-image: linear-gradient(to bottom, red, yellow); */
-  background-color:#bf4d77;
-  transform: scale(.99);
+  background-color: #bf4d77;
+  transform: scale(0.99);
   transition: 0.3s;
   color: #fff;
 }
@@ -204,9 +204,7 @@ footer p {
 
 /* // MOBILE */
 
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .container {
     max-width: 100%;
   }
@@ -259,9 +257,7 @@ footer p {
 }
 
 /* // TABLETS */
-@media only screen 
-  and (min-device-width: 481px) 
-  and (max-device-width: 1366px) {
+@media only screen and (min-device-width: 481px) and (max-device-width: 1366px) {
   .myPic {
     width: 500px;
     margin: 20px auto;
@@ -291,5 +287,3 @@ footer p {
     line-height: 3rem;
   }
 }
-
-
