@@ -301,4 +301,8 @@ footer p {
     width: 280px;
     height: 180px;
   }
+    
+    #contactLinks {
+  padding-left: 90px;
+}
 }
