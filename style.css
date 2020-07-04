@@ -261,7 +261,7 @@ footer p {
 /* // TABLETS */
 @media only screen 
   and (min-device-width: 481px) 
-  and (max-device-width: 768px) {
+  and (max-device-width: 1366px) {
   .myPic {
     width: 500px;
     margin: 20px auto;
@@ -292,17 +292,4 @@ footer p {
   }
 }
 
-/* LANDSCAPE */
 
-@media only screen 
-  and (min-device-width: 1366PX) 
-  and (min-device-height: 1024px) {
-    .projectImg {
-    width: 280px;
-    height: 180px;
-  }
-    
-    #contactLinks {
-  padding-left: 90px;
-}
-}
