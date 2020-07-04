@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-  max-width: 70%;
+  max-width: 85%;
   margin: 0 auto;
   z-index: 10;
 }
@@ -134,9 +134,6 @@ h1 {
 }
 
 /* CONTACT ME */
-/* .left {
-  text-align: left;
-} */
 
 #contact {
   display: flex;
@@ -258,10 +255,6 @@ footer p {
 
 /* // TABLETS */
 @media only screen and (min-device-width: 481px) and (max-device-width: 1366px) {
-  .container {
-    max-width: 85%;
-  }
-
   .myPic {
     width: 500px;
     margin: 20px auto;
