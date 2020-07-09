@@ -12,12 +12,18 @@ body {
 .container {
   max-width: 85%;
   margin: 0 auto;
-  z-index: 10;
+}
+
+h1 {
+  font-size: 3.5rem;
 }
 
 h2 {
-  text-align: center;
   font-size: 2rem;
+}
+
+.myName,
+h2 {
   text-align: center;
   font-family: 'Pacifico', cursive;
 }
@@ -69,20 +75,15 @@ li {
 
 .box_black {
   background-color: black;
-  color: #fff;
 }
 
 .row {
   padding: 50px;
 }
 
-h1 {
-  font-size: 3.5rem;
-}
-
-.myName {
+.myName,
+.box_black {
   color: #fff;
-  font-family: 'Pacifico', cursive;
 }
 
 .aboutMe_content,
