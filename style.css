@@ -136,6 +136,8 @@ a:hover {
 .project_name {
   text-align: center;
   font-size: 1.2rem;
+  background-color: #ff6173;
+  padding: 3px 0;
 }
 
 .project_list:hover {
