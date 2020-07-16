@@ -172,6 +172,7 @@ input[type='submit'] {
   border-radius: 20px;
   padding: 3px 0;
   background-color: #ff6173;
+  color: #fff;
 }
 
 input[type='submit']:hover {
