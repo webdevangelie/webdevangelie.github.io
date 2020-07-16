@@ -177,7 +177,7 @@ input[type='submit'] {
 input[type='submit']:hover {
   background-color: #fff;
   transition: 0.3s;
-  color: #fff;
+  color: #000;
 }
 
 .contactlinks ul {
