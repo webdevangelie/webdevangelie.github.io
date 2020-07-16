@@ -40,6 +40,7 @@ body {
 }
 
 h1 {
+  font-size: 3.5rem;
   margin-bottom: 20px;
   text-align: center;
 }
@@ -170,10 +171,11 @@ label {
 input[type='submit'] {
   border-radius: 20px;
   padding: 3px 0;
+  background-color: #ff6173;
 }
 
 input[type='submit']:hover {
-  background-color: #ff6173;
+  background-color: #000;
   transition: 0.3s;
   color: #fff;
 }
@@ -215,6 +217,10 @@ footer p {
   #projects,
   #contact {
     flex-direction: column;
+  }
+
+  h1 {
+    font-size: 2.5rem;
   }
 
   .myPic {
