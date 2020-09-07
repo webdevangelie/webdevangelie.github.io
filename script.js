@@ -4,7 +4,7 @@ const toggleIcon = document.getElementById('toggle-icon');
 const image1 = document.getElementById('image1');
 const image2 = document.getElementById('image2');
 const image3 = document.getElementById('image3');
-const textBox = document.getElementById('text-box');
+const textBoxes = document.querySelectorAll('.text-box');
 
 //Dark or Light images
 function imageMode(theme) {
@@ -17,10 +17,15 @@ function imageMode(theme) {
 function darkMode() {
     toggleSwitch.checked = true;
 
+    Array.prototype.forEach.call(textBoxes, function (textBox) {
+        textBox.style.background = 'rgb(255 255 255 / 50%)';
+        console.log('textBoxes[0]');
+    });
+
     //change the NAV background color
     nav.style.backgroundColor = 'rgb(0 0 0 / 50%)';
-    textBox.style.background = 'rgb(255 255 255 / 50%)';
-    //p.style.backgroundColor = 'rgb(0 0 0 / 50%);'
+
+    //textBox[i].style.background = 'rgb(255 255 255 / 50%)';
 
     //change the ICON from sun to moon
     toggleIcon.children[0].textContent = 'Dark Mode';
@@ -33,7 +38,11 @@ function darkMode() {
 function lightMode() {
     //change the NAV background color
     nav.style.backgroundColor = 'rgb(255 255 255 / 50%)';
-    textBox.style.backgroundColor = 'rgb(0 0 0 / 50%)';
+
+    Array.prototype.forEach.call(textBoxes, function (textBox) {
+        textBox.style.background = 'rgb(0 0 0 / 50%)';
+        console.log('textBoxes[0]');
+    });
 
     //change the ICON from sun to moon
     toggleIcon.children[0].textContent = 'Light Mode';
