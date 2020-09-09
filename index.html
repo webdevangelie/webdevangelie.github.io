@@ -4,8 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Angelie Sioson | Frontend Developer</title>
+    
+    <!-- Favicon -->
     <link rel="icon" type="image/png" href="favicon.png">
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -31,8 +39,9 @@
     <!-- Home -->
     <section id="home">
         <div class="title-group">
-            <h1>I am Angelie Sioson</h1>
-            <h2>Frontend Web Developer</h2>
+            <h1 data-aos="fade-up">I am Angelie Sioson</h1>
+            <h2 data-aos="fade-right"
+            data-aos-delay="1000">Frontend Web Developer</h2>
         </div>
         <i class="fas fa-angle-double-down"></i>
     </section>
@@ -44,8 +53,11 @@
                 src="./img/me.jpg"
                 alt="Angelie as Developer"
                 class="myPic"
+                data-aos="fade-right"
+                data-aos-delay="1000"
             />
-            <p class="aboutme_text text-box" id="test">
+            <p class="aboutme_text text-box" id="test" data-aos="fade-left"
+            data-aos-delay="1000">
             Hi! I am Angelie Sioson. I am an accountant by profession but
             a tech savvy by passion. Ever since I was a child, I have this
             one of a kind interest with technology. But as I grew up, it
@@ -67,7 +79,8 @@
     <section id="projects">
         <h1>Projects</h1>
         <div class="project-container">
-            <div class="project-item">
+            <div class="project-item" data-aos="fade-right"
+            data-aos-delay="1000">
                 <div class="image-container"> 
                     <img src="img/covid_light.svg" alt="" class="project-image" id="image1">
                 </div>
@@ -78,7 +91,8 @@
                     <button class="secondary"><a href="https://github.com/webdevangelie/covid19tracker">View Code</a></button>
                 </div>
             </div>
-            <div class="project-item">
+            <div class="project-item" data-aos="fade-left"
+            data-aos-delay="1000">
                 <div class="image-container"> 
                     <img src="img/quote_light.svg" alt="" class="project-image" id="image2">
                 </div>
@@ -89,7 +103,8 @@
                     <button class="secondary"><a href="https://github.com/webdevangelie/quote-generator">View Code</a></button>
                 </div>
             </div>
-            <div class="project-item">
+            <div class="project-item" data-aos="fade-right"
+            data-aos-delay="1000">
                 <div class="image-container"> 
                     <img src="img/wip_light.svg" alt="" class="project-image" id="image3">
                 </div>
@@ -104,7 +119,8 @@
     </section>
     <!-- Contact Section -->
     <section id="contact">
-        <div class="social-icons">
+        <div class="social-icons" data-aos="fade-up"
+        data-aos-delay="500">
             <i class="fab fa-github"><a href=""></a></i>
             <i class="fa fa-envelope"></i>
             <i class="fab fa-linkedin-in"><a
@@ -118,7 +134,18 @@
             <i class="fab fa-twitter"></i>
         </div>
     </section>
-    <!-- Script
+    
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            delay: 200,
+            duration: 1500,
+            once: false,
+            mirror: false
+        });
+    </script>
+
     <!-- Script -->
     <script src="script.js"></script>
 </body>
