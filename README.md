@@ -1,1 +1,1 @@
-https://www.webdevangelie.github.io
+https://webdevangelie.github.io/
