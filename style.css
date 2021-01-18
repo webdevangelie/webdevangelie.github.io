@@ -171,8 +171,9 @@ a:focus {
 /* About Section */
 .aboutme_content {
   display: flex;
-  max-width: 70%;
-  margin-top: 30px;
+  align-items: center;
+  justify-content: center;
+  max-width: 80%;
 }
 
 .myPic {
@@ -190,19 +191,23 @@ a:focus {
 }
 
 /* Projects Section */
+
 .project-container {
   display: flex;
   flex-direction: column;
-  margin-top: 50px;
+  justify-content: center;
   align-items: center;
+  max-width: 80%;
+  /* margin-left: 90px; */
+  margin-top: 50px;
 }
 
 .project-item {
-  max-width: 60%;
+  max-width: 80%;
   display: flex;
   margin-bottom: 50px;
   justify-content: center;
-  align-items: center;
+  align-items: left;
 }
 
 .image-container {
@@ -377,9 +382,11 @@ p {
 
   .aboutme_text {
     padding: 15px;
-    line-height: 1.5rem;
+    line-height: .9rem;
     margin-top: 15px;
   }
+
+  /* PROJECTS */
 
   .project-container {
     margin-top: 10px;
@@ -387,10 +394,8 @@ p {
 
   .project-item {
     max-width: 80%;
-    flex-direction: column;
+    
     margin-bottom: 30px;
-    justify-content: center;
-    align-items: center;
   }
 
   .image-container {
